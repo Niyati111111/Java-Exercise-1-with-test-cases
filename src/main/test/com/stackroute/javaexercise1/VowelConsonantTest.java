@@ -2,36 +2,21 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class VowelConsonantTest {
 
     VowelConsonant vowelConsonant;
 
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
-
     @Before
     public void setUp() {
-        System.out.println("Before");
+        
         vowelConsonant = new VowelConsonant();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+       
         vowelConsonant = null;
     }
 
@@ -56,7 +41,7 @@ public class VowelConsonantTest {
     }
 
     @Test
-    public void givenStringReturnConsonantVowelInvalidInput(){
+    public void givenString1ReturnInvalidInput(){
         //arrange
 
         //act
