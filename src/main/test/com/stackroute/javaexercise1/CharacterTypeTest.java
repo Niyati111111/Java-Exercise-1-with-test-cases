@@ -21,7 +21,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenCapitalLetterShouldPrintCapitalLetter() {
+    public void givenCapitalShouldReturnCapital() {
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenSmallLetterShouldPrintSmallLetter() {
+    public void givenSmallShouldReturnSmall() {
         //arrange
 
         //act
@@ -41,7 +41,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenDigitShouldPrintDigit() {
+    public void givenDigitShouldReturnDigit() {
         //arrange
 
         //act
@@ -53,7 +53,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenSpecialCharacterShouldPrintSpecialCharacter() {
+    public void givenSpecialShouldReturnSpecial() {
         //arrange
 
         //act
