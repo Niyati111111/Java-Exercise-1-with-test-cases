@@ -2,41 +2,25 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class PallindromeTest {
 
     Pallindrome pallindrome;
 
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
-
     @Before
     public void setUp() {
-        System.out.println("Before");
         pallindrome = new Pallindrome();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+        
         pallindrome = null;
     }
 
     @Test
-    public void givenPallindromeNumberShouldPrintPallindromeNumberWithSumOfEvenDigitsGreaterThan25() {
+    public void givenPallindromeNumberShouldPrintPallindrome() {
         //arrange
 
         //act
@@ -46,7 +30,7 @@ public class PallindromeTest {
     }
 
     @Test
-    public void givenPallindromeNumberShouldPrintPallindromeNumberWithSumOfEvenDigitsLesserThan25() {
+    public void givenPallindromeNumber1ShouldPrintPallindrome() {
         //arrange
 
         //act
