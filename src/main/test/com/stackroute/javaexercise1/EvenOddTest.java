@@ -21,7 +21,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenOddShouldPrintTom() {
+    public void givenOddShouldPrintTom() { //checks if the function returns Tom
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenEvenShouldPrintJerry() {
+    public void givenEvenShouldPrintJerry() { //checks if the function returns Jerry
         //arrange
 
         //act
@@ -41,7 +41,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenOutOfRangeShouldPrintNeither() {
+    public void givenOutOfRangeShouldPrintNeither() { //checks if the function returns Neither Tom Nor Jerry
         //arrange
 
         //act
