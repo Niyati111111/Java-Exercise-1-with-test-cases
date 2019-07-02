@@ -21,7 +21,7 @@ public class RepeatNTimesTest {
     }
 
     @Test
-    public void givenStringAndNumberNDisplayLastNCharactersNTimes() {
+    public void givenStringReturnNCharsNTimes() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class RepeatNTimesTest {
     }
 
     @Test
-    public void givenStringAndNumberN1DisplayLastN1CharactersN1Times() {
+    public void givenStringReturnReturnN1CharsN1Times() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
@@ -41,13 +41,13 @@ public class RepeatNTimesTest {
     }
 
     @Test
-    public void givenStringAndNumberN2DisplayLastNCharactersN2Times() {
+    public void givenStringReturnString() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
-        String result = repeatNTimes.repeat("Stackroute",1);
+        String result = repeatNTimes.repeat("Stackroute",0);
         //assert
-        assertEquals("Stackroutee",result);
+        assertEquals("Stackroute",result);
     }
 
 }
