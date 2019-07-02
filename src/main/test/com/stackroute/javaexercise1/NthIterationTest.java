@@ -21,7 +21,7 @@ public class NthIterationTest {
     }
 
     @Test
-    public void givenNumberNDisplayNthNumberNTimes() {
+    public void givenNumberNDisplayNthNumberNTimes() { //checks whether the function returns the nth number n number of times
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class NthIterationTest {
     }
 
     @Test
-    public void givenNumberN1DisplayNthNumberN1Times() {
+    public void givenNumberN1DisplayNthNumberN1Times() { //checks whether the function returns the nth number n number of times
         //arrange
 
         //act
@@ -41,7 +41,7 @@ public class NthIterationTest {
     }
 
     @Test
-    public void givenNumberN2DisplayNthNumberN2Times() {
+    public void givenNumberN2DisplayNthNumberN2Times() { //checks whether the function returns the nth number n number of times
         //arrange
 
         //act
