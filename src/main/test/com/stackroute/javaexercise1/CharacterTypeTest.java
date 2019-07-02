@@ -21,17 +21,17 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenCapitalShouldReturnCapital() {
+    public void givenCapitalShouldReturnCapital() { //checks whether the function returns capital letter
         //arrange
 
         //act
         String result = characterType.checkType("A");
         //assert
-        assertEquals("Capital Result",result);
+        assertEquals("Capital Letter",result);
     }
 
     @Test
-    public void givenSmallShouldReturnSmall() {
+    public void givenSmallShouldReturnSmall() { //checks whether the function returns small letter
         //arrange
 
         //act
@@ -41,7 +41,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenDigitShouldReturnDigit() {
+    public void givenDigitShouldReturnDigit() { //checks whether the function returns digit
         //arrange
 
         //act
@@ -53,7 +53,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenSpecialShouldReturnSpecial() {
+    public void givenSpecialShouldReturnSpecial() { //checks whether the function returns special character
         //arrange
 
         //act
