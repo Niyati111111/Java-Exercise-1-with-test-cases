@@ -22,7 +22,7 @@ public class TotalTest {
     }
 
     @Test
-    public void givenStringReturnTotal(){
+    public void givenStringReturnTotal(){ //checks whether it returns the total of the given numbers
         //arrange
 
         //act
@@ -32,7 +32,7 @@ public class TotalTest {
     }
 
     @Test
-    public void givenString1ReturnTotal(){
+    public void givenString1ReturnTotal(){ //checks whether it returns the total of the given numbers
         //arrange
 
         //act
@@ -42,7 +42,8 @@ public class TotalTest {
     }
 
     @Test
-    public void givenString2ReturnTotal(){
+    public void givenString2ReturnTotal(){ //checks whether it returns the total of the given numbers
+   
         //arrange
 
         //act
