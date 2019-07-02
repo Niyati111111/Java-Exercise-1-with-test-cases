@@ -21,7 +21,7 @@ public class GuessGameTest {
     }
 
     @Test
-    public void givenTargetShouldReturnWhenMatches() {
+    public void givenTargetShouldReturnWhenMatches() { //checks if the target matches the randomly generated number
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class GuessGameTest {
     }
 
     @Test
-    public void givenNegativeTargetShouldReturnErrorMessage(){
+    public void givenNegativeTargetShouldReturnErrorMessage(){ //checks whether the function returns error message for a negative integer
         //arrange
 
         //act
@@ -41,7 +41,7 @@ public class GuessGameTest {
     }
 
     @Test
-    public void givenOutOfRangeShouldReturnErrorMessage() {
+    public void givenOutOfRangeShouldReturnErrorMessage() { //checks whether the function returns error message for an out of range input
         //arrange
 
         //act
