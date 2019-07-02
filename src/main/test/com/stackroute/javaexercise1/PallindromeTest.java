@@ -30,13 +30,13 @@ public class PallindromeTest {
     }
 
     @Test
-    public void givenPallindromeNumber1ShouldPrintPallindrome() {
+    public void givenNegativeNumberReturnError() {
         //arrange
 
         //act
-        String result = pallindrome.pallindromeCheck(1221);
+        String result = pallindrome.pallindromeCheck(-1221);
         //assert
-        assertEquals("The number is a pallindrome and the sum of even digits is lesser than 25",result);
+        assertEquals("Invalid Input!",result);
     }
 
     @Test
