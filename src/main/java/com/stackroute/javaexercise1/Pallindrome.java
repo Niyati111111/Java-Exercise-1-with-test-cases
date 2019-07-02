@@ -5,6 +5,10 @@ public class Pallindrome {
     /* function to check whether the number entered by the user is a pallindrome or not */
     public String pallindromeCheck(int num) {
 
+        if(num < 0 )
+        {
+            return "Invalid Input!";
+        }
         int number = num;
 
         int sum=0;
