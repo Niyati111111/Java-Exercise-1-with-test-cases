@@ -20,7 +20,7 @@ public class PallindromeTest {
     }
 
     @Test
-    public void givenPallindromeNumberShouldPrintPallindrome() {
+    public void givenPallindromeNumberShouldPrintPallindrome() { //checks whether given number is palindrome
         //arrange
 
         //act
@@ -30,7 +30,7 @@ public class PallindromeTest {
     }
 
     @Test
-    public void givenNegativeNumberReturnError() {
+    public void givenNegativeNumberReturnError() { //checks whether given number is invalid
         //arrange
 
         //act
@@ -40,7 +40,7 @@ public class PallindromeTest {
     }
 
     @Test
-    public void givenNonPallindromeShouldPrintNotPallindrome() {
+    public void givenNonPallindromeShouldPrintNotPallindrome() { //checks whether given number is not palindrome
         //arrange
 
         //act
