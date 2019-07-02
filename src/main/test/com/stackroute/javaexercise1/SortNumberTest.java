@@ -21,7 +21,7 @@ public class SortNumberTest {
     }
 
     @Test
-    public void givenNumberReturnCountOfDigits() {
+    public void givenNumberReturnCountOfDigits() { //checks whether it returns the count of digit
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class SortNumberTest {
     }
 
     @Test
-    public void givenNumberReturnNumberWithDigitsInDecreasing() {
+    public void givenNumberReturnNumberWithDigitsInDecreasing() { //checks whether the digits are sorted
         //arrange
 
         //act
@@ -43,7 +43,7 @@ public class SortNumberTest {
     }
 
     @Test
-    public void givenNumberReturnSumOfEvenDigits() {
+    public void givenNumberReturnSumOfEvenDigits() { //checks whether it returns the sum
         //arrange
 
         //act
