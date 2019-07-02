@@ -21,7 +21,7 @@ public class VowelConsonantTest {
     }
 
     @Test
-    public void givenStringReturnConsonantVowel(){
+    public void givenStringReturnConsonantVowel(){ //checks whether it identifies vowel and consonant
         //arrange
 
         //act
@@ -31,7 +31,7 @@ public class VowelConsonantTest {
     }
 
     @Test
-    public void givenStringReturnInvalidInput(){
+    public void givenStringReturnInvalidInput(){ //checks whether it identifies invalid input
         //arrange
 
         //act
@@ -41,8 +41,8 @@ public class VowelConsonantTest {
     }
 
     @Test
-    public void givenString1ReturnInvalidInput(){
-        //arrange
+    public void givenString1ReturnInvalidInput(){ //checks whether it identifies invalid input
+        //arrange 
 
         //act
         String result = vowelConsonant.determineVowelConsonants("ma@");
