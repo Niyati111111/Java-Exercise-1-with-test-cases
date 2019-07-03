@@ -10,21 +10,12 @@ public class CharacterTypeTest {
 
     @Before
     public void setUp() {
-<<<<<<< HEAD
 
-=======
-      
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         characterType = new CharacterType();
     }
 
     @After
     public void tearDown() {
-<<<<<<< HEAD
-
-=======
-       
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         characterType = null;
     }
 
@@ -70,13 +61,9 @@ public class CharacterTypeTest {
         assertEquals("Special Character",result);
     }
 
-<<<<<<< HEAD
+
     @Test(expected = NullPointerException.class) //checks for exception
     public void inputNullSubstringReturnException() {
         String result = characterType.checkType(null);
     }
 }
-=======
-
-}
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c

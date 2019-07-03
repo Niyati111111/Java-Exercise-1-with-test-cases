@@ -6,29 +6,17 @@ import static org.junit.Assert.*;
 
 public class GuessGameTest {
 
-<<<<<<< HEAD
     GuessGame guessGame;
 
     @Before
     public void setUp() {
-
-=======
-    GuessGame guessGame ;
-
-    @Before
-    public void setUp() {
        
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
         guessGame = new GuessGame();
     }
 
     @After
     public void tearDown() {
-<<<<<<< HEAD
-
-=======
-     
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         guessGame = null;
     }
 
@@ -43,11 +31,8 @@ public class GuessGameTest {
     }
 
     @Test
-<<<<<<< HEAD
-    public void givenNegativeTargetShouldReturnErrorMessage() { //checks whether the function returns error message for a negative integer
-=======
     public void givenNegativeTargetShouldReturnErrorMessage(){ //checks whether the function returns error message for a negative integer
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
         //arrange
 
         //act
@@ -67,14 +52,5 @@ public class GuessGameTest {
     }
 
 
-<<<<<<< HEAD
-}
-=======
-
-
-
-
-
 
 }
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c

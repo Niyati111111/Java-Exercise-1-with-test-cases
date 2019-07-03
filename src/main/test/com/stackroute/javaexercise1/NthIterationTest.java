@@ -10,21 +10,11 @@ public class NthIterationTest {
 
     @Before
     public void setUp() {
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         nthIteration = new NthIteration();
     }
 
     @After
     public void tearDown() {
-<<<<<<< HEAD
-
-=======
-       
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         nthIteration = null;
     }
 
@@ -58,7 +48,7 @@ public class NthIterationTest {
         assertEquals("122333444455555", result);
     }
 
-<<<<<<< HEAD
+
     @Test
     public void givenZeroReturnNull() { //checks for null
         //arrange
@@ -69,6 +59,5 @@ public class NthIterationTest {
 
     }
 
-=======
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
 }

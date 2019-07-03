@@ -10,22 +10,15 @@ public class RepeatNTimesTest {
 
     @Before
     public void setUp() {
-<<<<<<< HEAD
 
-=======
-       
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
         repeatNTimes = new RepeatNTimes();
     }
 
     @After
     public void tearDown() {
         repeatNTimes = null;
-<<<<<<< HEAD
 
-=======
-       
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
     }
 
     @Test
@@ -58,13 +51,12 @@ public class RepeatNTimesTest {
         assertEquals("Stackroute",result);
     }
 
-<<<<<<< HEAD
+
     @Test(expected = NullPointerException.class) //checks for exception
     public void inputNullSubstringReturnException() {
         String result = repeatNTimes.repeat(null, 1);
     }
 
 
-=======
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
 }

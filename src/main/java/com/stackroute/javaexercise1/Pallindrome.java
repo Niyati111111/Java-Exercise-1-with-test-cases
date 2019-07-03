@@ -5,17 +5,13 @@ public class Pallindrome {
     /* function to check whether the number entered by the user is a pallindrome or not */
     public String pallindromeCheck(int num) {
 
-<<<<<<< HEAD
+
         if(num < 0) {
             return "Invalid Input!";
         }
 
-=======
-        if(num < 0 )
-        {
-            return "Invalid Input!";
-        }
->>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
+
+
         int number = num;
 
         int sum=0;
