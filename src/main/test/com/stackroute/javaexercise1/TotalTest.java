@@ -11,13 +11,21 @@ public class TotalTest {
 
     @Before
     public void setUp() {
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         total = new Total();
     }
 
     @After
     public void tearDown() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         total = null;
     }
 
@@ -43,7 +51,11 @@ public class TotalTest {
 
     @Test
     public void givenString2ReturnTotal(){ //checks whether it returns the total of the given numbers
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         //arrange
 
         //act
@@ -53,4 +65,7 @@ public class TotalTest {
     }
 
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c

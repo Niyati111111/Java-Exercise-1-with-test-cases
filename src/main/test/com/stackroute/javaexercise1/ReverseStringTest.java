@@ -10,13 +10,21 @@ public class ReverseStringTest {
 
     @Before
     public void setUp() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         reverseString = new ReverseString();
     }
 
     @After
     public void tearDown() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         reverseString = null;
     }
 
@@ -48,10 +56,13 @@ public class ReverseStringTest {
         String result = reverseString.reverse("madam");
         //assert
         assertEquals("madam",result);
+<<<<<<< HEAD
     }
 
     @Test(expected = NullPointerException.class) //checks for exception
     public void inputNullReturnException() {
         String result = reverseString.reverse(null);
+=======
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
     }
 }

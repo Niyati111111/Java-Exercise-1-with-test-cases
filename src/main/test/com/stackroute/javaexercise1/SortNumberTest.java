@@ -10,13 +10,21 @@ public class SortNumberTest {
 
     @Before
     public void setUp() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         sortNumber = new SortNumber();
     }
 
     @After
     public void tearDown() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         sortNumber = null;
     }
 

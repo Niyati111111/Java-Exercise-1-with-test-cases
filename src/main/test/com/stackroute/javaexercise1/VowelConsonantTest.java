@@ -11,13 +11,21 @@ public class VowelConsonantTest {
 
     @Before
     public void setUp() {
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         vowelConsonant = new VowelConsonant();
     }
 
     @After
     public void tearDown() {
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
         vowelConsonant = null;
     }
 
@@ -43,7 +51,11 @@ public class VowelConsonantTest {
 
     @Test
     public void givenString1ReturnInvalidInput(){ //checks whether it identifies invalid input
+<<<<<<< HEAD
         //arrange
+=======
+        //arrange 
+>>>>>>> a5eb5beb4fc714fc77ed2982a43eef28e5b7925c
 
         //act
         String result = vowelConsonant.determineVowelConsonants("ma@");
