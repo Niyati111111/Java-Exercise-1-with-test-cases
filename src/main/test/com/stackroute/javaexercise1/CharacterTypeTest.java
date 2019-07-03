@@ -2,52 +2,36 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class CharacterTypeTest {
 
     CharacterType characterType;
 
-
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
-
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         characterType = new CharacterType();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+
         characterType = null;
     }
 
     @Test
-    public void givenCapitalLetterShouldPrintCapitalLetter() {
+    public void givenCapitalShouldReturnCapital() { //checks whether the function returns capital letter
         //arrange
 
         //act
         String result = characterType.checkType("A");
         //assert
-        assertEquals("Capital Result",result);
+        assertEquals("Capital Letter",result);
     }
 
     @Test
-    public void givenSmallLetterShouldPrintSmallLetter() {
+    public void givenSmallShouldReturnSmall() { //checks whether the function returns small letter
         //arrange
 
         //act
@@ -57,11 +41,11 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenDigitShouldPrintDigit() {
+    public void givenDigitShouldReturnDigit() { //checks whether the function returns digit
         //arrange
 
         //act
-        String result = characterType.checkType("3");
+        String result = characterType.checkType("0");
         //assert
 
         assertEquals("Digit",result);
@@ -69,7 +53,7 @@ public class CharacterTypeTest {
     }
 
     @Test
-    public void givenSpecialCharacterShouldPrintSpecialCharacter() {
+    public void givenSpecialShouldReturnSpecial() { //checks whether the function returns special character
         //arrange
 
         //act
@@ -78,5 +62,8 @@ public class CharacterTypeTest {
         assertEquals("Special Character",result);
     }
 
-
+    @Test(expected = NullPointerException.class) //checks for exception
+    public void inputNullSubstringReturnException() {
+        String result = characterType.checkType(null);
+    }
 }

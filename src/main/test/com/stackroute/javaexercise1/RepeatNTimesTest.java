@@ -2,41 +2,26 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class RepeatNTimesTest {
 
     RepeatNTimes repeatNTimes;
 
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
-
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         repeatNTimes = new RepeatNTimes();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
         repeatNTimes = null;
+
     }
 
     @Test
-    public void givenStringAndNumberNDisplayLastNCharactersNTimes() {
+    public void givenStringReturnNCharsNTimes() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
@@ -46,7 +31,7 @@ public class RepeatNTimesTest {
     }
 
     @Test
-    public void givenStringAndNumberN1DisplayLastN1CharactersN1Times() {
+    public void givenStringReturnReturnN1CharsN1Times() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
@@ -56,13 +41,19 @@ public class RepeatNTimesTest {
     }
 
     @Test
-    public void givenStringAndNumberN2DisplayLastNCharactersN2Times() {
+    public void givenStringReturnString() { //checks whether the last N characters are repeated for N times
         //arrange
 
         //act
-        String result = repeatNTimes.repeat("Stackroute",1);
+        String result = repeatNTimes.repeat("Stackroute",0);
         //assert
-        assertEquals("Stackroutee",result);
+        assertEquals("Stackroute",result);
     }
+
+    @Test(expected = NullPointerException.class) //checks for exception
+    public void inputNullSubstringReturnException() {
+        String result = repeatNTimes.repeat(null, 1);
+    }
+
 
 }

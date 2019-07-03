@@ -6,6 +6,11 @@ public class ReverseString {
 
     /* method to reverse a string */
     public String reverse(String str) {
+
+        if(str==""){
+            return "Invalid Input!";
+        }
+
         char[] charArray = str.toCharArray();
         int length = charArray.length;
         char[] reverseArray = new char[length];

@@ -2,41 +2,26 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class GuessGameTest {
 
-    GuessGame guessGame ;
-
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
+    GuessGame guessGame;
 
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         guessGame = new GuessGame();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+
         guessGame = null;
     }
 
     @Test
-    public void givenTargetShouldGenerateRandomUntilTargetMatchesRandom() {
+    public void givenTargetShouldReturnWhenMatches() { //checks if the target matches the randomly generated number
         //arrange
 
         //act
@@ -46,7 +31,7 @@ public class GuessGameTest {
     }
 
     @Test
-    public void givenNegativeTargetShouldReturnErrorMessage(){
+    public void givenNegativeTargetShouldReturnErrorMessage() { //checks whether the function returns error message for a negative integer
         //arrange
 
         //act
@@ -56,7 +41,7 @@ public class GuessGameTest {
     }
 
     @Test
-    public void givenNumberGreaterThan100ShouldReturnErrorMessage() {
+    public void givenOutOfRangeShouldReturnErrorMessage() { //checks whether the function returns error message for an out of range input
         //arrange
 
         //act
@@ -64,12 +49,6 @@ public class GuessGameTest {
         //assert
         assertEquals("Target is out of bounds", result);
     }
-
-
-
-
-
-
 
 
 }

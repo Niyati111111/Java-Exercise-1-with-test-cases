@@ -2,8 +2,6 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class TotalTest {
@@ -11,34 +9,20 @@ public class TotalTest {
 
     Total total;
 
-
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
-
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         total = new Total();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+
         total = null;
     }
 
     @Test
-    public void givenStringReturnTotal(){
+    public void givenStringReturnTotal(){ //checks whether it returns the total of the given numbers
         //arrange
 
         //act
@@ -48,7 +32,7 @@ public class TotalTest {
     }
 
     @Test
-    public void givenString1ReturnTotal(){
+    public void givenString1ReturnTotal(){ //checks whether it returns the total of the given numbers
         //arrange
 
         //act
@@ -58,7 +42,8 @@ public class TotalTest {
     }
 
     @Test
-    public void givenString2ReturnTotal(){
+    public void givenString2ReturnTotal(){ //checks whether it returns the total of the given numbers
+
         //arrange
 
         //act
@@ -68,3 +53,4 @@ public class TotalTest {
     }
 
 }
+

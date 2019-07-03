@@ -2,42 +2,26 @@ package com.stackroute.javaexercise1;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
-import org.junit.BeforeClass;
-import org.junit.AfterClass;
 import static org.junit.Assert.*;
 
 public class EvenOddTest {
 
-     EvenOdd evenOdd;
-
-
-    @BeforeClass
-    public static void setUpBeforeClass() {
-        System.out.println("Before class");
-
-    }
-
-    @AfterClass
-    public static void tearDownAfterClass() {
-        System.out.println("After class");
-
-    }
-
+    EvenOdd evenOdd;
 
     @Before
     public void setUp() {
-        System.out.println("Before");
+
         evenOdd = new EvenOdd();
     }
 
     @After
     public void tearDown() {
-        System.out.println("After");
+
         evenOdd = null;
     }
 
     @Test
-    public void givenOddShouldPrintTom() {
+    public void givenOddShouldPrintTom() { //checks if the function returns Tom
         //arrange
 
         //act
@@ -47,7 +31,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenEvenShouldPrintJerry() {
+    public void givenEvenShouldPrintJerry() { //checks if the function returns Jerry
         //arrange
 
         //act
@@ -57,7 +41,7 @@ public class EvenOddTest {
     }
 
     @Test
-    public void givenOutOfRangeShouldPrintNeitherTomNorJerry() {
+    public void givenOutOfRangeShouldPrintNeither() { //checks if the function returns Neither Tom Nor Jerry
         //arrange
 
         //act
@@ -66,5 +50,29 @@ public class EvenOddTest {
         assertEquals("Neither Tom nor Jerry", result);
 
     }
+
+    @Test
+    public void givenNegativeShouldPrintNeither() { //checks if the function returns Neither Tom Nor Jerry
+        //arrange
+
+        //act
+        String result = evenOdd.tomJerry(-3);
+        //assert
+        assertEquals("Neither Tom nor Jerry", result);
+
+    }
+
+    @Test
+    public void givenZeroShouldPrintNeither() { //checks if the function returns Neither Tom Nor Jerry
+        //arrange
+
+        //act
+        String result = evenOdd.tomJerry(0);
+        //assert
+        assertEquals("Neither Tom nor Jerry", result);
+
+    }
+
+
 
 }
