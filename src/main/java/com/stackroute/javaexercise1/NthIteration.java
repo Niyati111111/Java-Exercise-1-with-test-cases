@@ -4,6 +4,10 @@ public class NthIteration {
 
     /* method to display nth number for n number of times */
     public String iterate(int n){
+        
+        if(n==0){
+            return null;
+        }
 
         String value="";
 
